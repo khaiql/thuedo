@@ -888,12 +888,8 @@ body {
 }
 
 /* Custom classes for thue.do */
-.pt-150 {
-    padding-top: 150px;
-}
-
-.pb-150 {
-    padding-bottom: 150px;
+#services .ads-row {
+    padding-top: 140px;
 }
 
 .fit-image {
