@@ -886,3 +886,17 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #{{ site.data.template.color.primary }};
 }
+
+/* Custom classes for thue.do */
+.pt-150 {
+    padding-top: 150px;
+}
+
+.pb-150 {
+    padding-bottom: 150px;
+}
+
+.fit-image {
+    width: 100%;
+    object-fit: cover;
+}
