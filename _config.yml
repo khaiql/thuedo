@@ -3,9 +3,8 @@
 
 # Site settings
 title: Thuê Đồ
-email: your-email@domain.com
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
-
+email: hotro.bookforward@gmail.com
+description: "Thue.Do là nền tảng online giúp kết nối Chủ tiệm và Người thuê trong việc thuê vật dụng. Thue.Do ra đời với mong muốn hướng đến một lối sống tối giản, tiết kiệm và tiêu dùng bền vững."
 
 # Team names, titles and social links
 people:
