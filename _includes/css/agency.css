@@ -285,7 +285,8 @@ fieldset[disabled] .btn-xl.active {
 }
 
 header {
-    margin-top: 60px;
+    top: 60px;
+    position: relative;
     color: #fff;
     background-attachment: scroll;
     background-image: url('{{ site.baseurl }}/img/header-bg.jpg');
@@ -320,7 +321,7 @@ header .intro-text .intro-heading {
 
 @media(min-width:768px) {
     header {
-        margin-top: 0;
+        top: 0;
     }
 
     header .intro-text {
@@ -349,7 +350,7 @@ section {
     padding: 15px 0;
 }
 
-section h3 {
+section h2 {
     padding: 50px 0;
 }
 
@@ -906,9 +907,9 @@ section#services {
     padding: 75px 0;
 }
 
-#services .three-steps-rent {
+.last-row-in-section {
     padding-top: 75px;
-    padding-bottom: 100px;
+    padding-bottom: 80px;
 }
 
 #services .step-container {
@@ -923,13 +924,12 @@ section#services {
     padding: 75px 0;
 }
 
-#owner .thuedo-benefit {
-    padding-top: 75px;
-    padding-bottom: 100px;
-}
-
 #owner .thuedo-benefit h4 {
     margin-bottom: 50px;
+}
+
+#about {
+    padding-bottom: 80px;
 }
 
 .fit-image {
