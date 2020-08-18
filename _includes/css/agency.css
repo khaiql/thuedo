@@ -346,7 +346,11 @@ header .intro-text .intro-heading {
 }
 
 section {
-    padding: 100px 0;
+    padding: 15px 0;
+}
+
+section h3 {
+    padding: 50px 0;
 }
 
 section h2.section-heading {
@@ -366,7 +370,7 @@ section h3.section-subheading {
 
 @media(min-width:768px) {
     section {
-        padding: 150px 0;
+        padding: 30px 0;
     }
 }
 
@@ -904,11 +908,28 @@ section#services {
 
 #services .three-steps-rent {
     padding-top: 75px;
-    padding-bottom: 150px;
+    padding-bottom: 100px;
 }
 
 #services .step-container {
     margin-top: 50px;
+}
+
+#owner .first-ads-row {
+    padding-bottom: 75px;
+}
+
+#owner .second-ads-row {
+    padding: 75px 0;
+}
+
+#owner .thuedo-benefit {
+    padding-top: 75px;
+    padding-bottom: 100px;
+}
+
+#owner .thuedo-benefit h4 {
+    margin-bottom: 50px;
 }
 
 .fit-image {
