@@ -6,7 +6,7 @@
 
 body {
     overflow-x: hidden;
-    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Late","Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #{{ site.data.template.color.secondary-dark }};
 }
 
@@ -943,4 +943,14 @@ section#services {
 
 .text-white {
     color: #fff;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    margin: 0 -15px;
+}
+
+.navbar-brand.with-logo {
+    margin-top: -29px;
 }
