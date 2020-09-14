@@ -45,6 +45,8 @@ people:
 social:
   - title: facebook
     url: 'https://www.facebook.com/thuedo.online'
+  - title: envelope
+    url: 'mailto:hotro.thuedo@gmail.com'
 
 # Postal address (add as many lines as necessary)
 address:
