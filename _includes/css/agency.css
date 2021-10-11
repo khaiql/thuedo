@@ -170,6 +170,10 @@ fieldset[disabled] .btn-xl.active {
     background-color: #fff;
 }
 
+.navbar {
+    min-height: 80px !important;
+}
+
 .navbar-default {
     border-color: transparent;
     background-color: #fff;
@@ -208,9 +212,9 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .nav li a {
     text-transform: uppercase;
     font-family: {{ site.data.template.font.primary }};
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: 1px;
-    color: #222;
+    color: gray;
     -webkit-transition: all ease .35s;
     -moz-transition: all ease .35s;
     transition: all ease .35s;
@@ -234,11 +238,15 @@ fieldset[disabled] .btn-xl.active {
     background-color: #{{ site.data.template.color.secondary }};
 }
 
+.navbar-default .navbar-nav {
+    margin-top: 10px;
+}
+
 @media(min-width:768px) {
     .navbar-default {
-        padding: 25px 0;
+        /* padding: 25px 0; */
         border: 0;
-        background-color: transparent;
+        /* background-color: transparent; */
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
@@ -249,11 +257,11 @@ fieldset[disabled] .btn-xl.active {
         -webkit-transition: all .3s;
         -moz-transition: all .3s;
         transition: all .3s;
-        color: #fff;
+        color: #222;
     }
 
     .navbar-default .nav li a {
-        color: #fff;
+        color: #222;
     }
 
     .navbar-default.navbar-shrink .navbar-brand { 
@@ -275,9 +283,8 @@ fieldset[disabled] .btn-xl.active {
     }
 
     .navbar-default.navbar-shrink .navbar-nav>.active>a {
-        color: #fff;
+color: #fff;
     }
-
 
     .navbar-default.navbar-shrink .navbar-brand {
         font-size: 1.5em;
@@ -285,17 +292,9 @@ fieldset[disabled] .btn-xl.active {
 }
 
 header {
-    top: 60px;
+    top: 80px;
     position: relative;
     color: #fff;
-    background-attachment: scroll;
-    background-image: url('{{ site.baseurl }}/img/header-bg.jpg');
-    background-position: center center;
-    background-repeat: none;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
 }
 
 header .intro-text {
@@ -319,20 +318,74 @@ header .intro-text .intro-heading {
     line-height: 50px;
 }
 
+header img.download-button {
+    height: 40px;
+}
+
+header .small-screen {
+    background-color: #754DB7;
+}
+
+header .small-screen .messages {
+    padding-top: 40px;
+}
+
+header .small-screen .download-buttons {
+    margin-top: 20px;
+}
+
+/* For ipad */
 @media(min-width:768px) {
+    .small-screen .intro-lead-in {
+        font-size: x-large;
+    }
+    
+    header img.download-button {
+        height: 50px;
+    }
+}
+
+@media(width: 1024px) {
+    .big-screen {
+        height: 600px;
+    }
+}
+
+@media(min-width: 2000px) {
+    .big-screen {
+        height: 1000px;
+    }
+}
+
+@media(min-width: 1800px) {
+    .big-screen {
+        height: 800px;
+    }
+}
+
+/* For ipad pro and desktop */
+@media(min-width:769px) {
     header {
-        top: 0;
+        background-attachment: scroll;
+        background-image: url('{{ site.baseurl }}/img/header-bg.jpg');
+        background-position: center center;
+        background-repeat: none;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
     }
 
     header .intro-text {
-        padding-top: 300px;
+        padding-top: 250px;
         padding-bottom: 200px;
     }
 
     header .intro-text .intro-lead-in {
         margin-bottom: 25px;
         font-family: {{ site.data.template.font.secondary }};
-        font-size: 20px;
+        font-size: 32px;
+        font-weight: 100;
         line-height: 20px;
     }
 
@@ -916,6 +969,10 @@ section#services {
     margin-top: 50px;
 }
 
+#services img.in-app-step {
+    width: 280px;
+}
+
 #owner .first-ads-row {
     padding-bottom: 75px;
 }
@@ -946,11 +1003,12 @@ section#services {
 }
 
 .logo {
-    width: 80px;
-    height: 80px;
-    margin: 0 -15px;
+    /* width: 132px; */
+    height: 38px;
+    /* margin: 0 -15px; */
 }
 
 .navbar-brand.with-logo {
     margin-top: -29px;
+    height: 80px;
 }
